@@ -24,6 +24,7 @@ SECRET_KEY = 'v6a!=evl&t!7_(npv&mr_64a@546j5-dlegpzi&bylg(be-lz%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shop_app'
+    'shop_app',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -52,22 +53,6 @@ MIDDLEWARE_CLASSES = [
 ]
 
 ROOT_URLCONF = 'shop.urls'
-
-TEMPLATES = [
-    {
-        'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
-        'OPTIONS': {
-            'context_processors': [
-                'django.template.context_processors.debug',
-                'django.template.context_processors.request',
-                'django.contrib.auth.context_processors.auth',
-                'django.contrib.messages.context_processors.messages',
-            ],
-        },
-    },
-]
 
 WSGI_APPLICATION = 'shop.wsgi.application'
 
