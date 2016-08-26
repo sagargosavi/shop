@@ -75,8 +75,14 @@ TEMPLATE_LOADERS = (
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': "django.db.backends.postgresql_psycopg2", # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'NAME': "my_db",                      # Or path to database file if using sqlite3.
+        'USER': "new_user",                      # Not used with sqlite3.
+        'PASSWORD': "Krishiv#1112",                  # Not used with sqlite3.
+        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+        'PORT': '',
     }
 }
 
