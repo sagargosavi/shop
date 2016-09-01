@@ -19,4 +19,9 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', 'shop_app.views.index', name='index'),
+    url(r'^login/$', 'django.contrib.auth.views.login'),
+    url(r'^login1/$','shop_app.register.register_page',name='register'),
+    url(r'^register/$','shop_app.register.register_page',name='register'),
+    url(r'^register/success/$','shop_app.register.register_success'),
+    url(r'logout/$','shop_app.register.logout',name='logout')
 ]

@@ -5,3 +5,5 @@ from django.http import HttpResponse
 def index(request):
     return render(request,"index.html")
     #return HttpResponse("Hello This is testing msg from shop.")
+def login1(request):
+    return render(request,"login.html")
